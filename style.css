@@ -1,181 +1,232 @@
 @font-face {
-    font-family: "space mono";
-    src: url("SpaceMono-Regular.ttf");
+  font-family: "space mono";
+  src: url("SpaceMono-Regular.ttf");
 }
 
 * {
-    margin: 0 auto;
-    padding: 0 auto;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
-
 body {
-    background-color:#badfdb;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-font-family: "space mono", monospace;
+  background-color: #badfdb;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "space mono", monospace;
 }
 
 .container {
-width: 1000px;
-height: 800px;
-display: grid;
-grid-template-columns: 50% 50%;
-
+  width: 1000px;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .half1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aquarium-container {
-height: 400px;
-    width: 400px;
-    background-color: rgb(137, 209, 229);
-    border-radius: 300px;
-    border: 1px solid gray;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(137, 209, 229);
+  border-radius: 300px;
+  border: 1px solid gray;
 }
 
 .half2 {
-    display: grid;
-    grid-template-rows: 10% 50% 10% 20%;
-    width: 100%;
-    height: 100%;
-    row-gap: 10px;;
+  display: grid;
+  grid-template-rows: 10% 50% 10% 20%;
+  width: 100%;
+  height: 100%;
+  row-gap: 10px;
 }
 
 .fish-tank {
-    margin: 0 auto;
-    width: 250px;
-    display: block;
+  margin: 0 auto;
+  width: 250px;
+  display: block;
 }
 
 .header {
-    background-color: #ffa4a4;
-    display: flex;
-    width: 100%;
-    border: 1px solid gray;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
+  background-color: #ffa4a4;
+  display: flex;
+  width: 100%;
+  border: 1px solid gray;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 .info {
-    width: 100%;
-    border: 1px solid gray;
-    background-color: ;
-     border-radius: 5px;
+  width: 100%;
+  border: 1px solid gray;
+  background-color: ;
+  border-radius: 5px;
 }
 
 .inputs {
-    width: 100%;
-    border: 1px solid gray;
-    background-color: #ffbdbd;
-     border-radius: 5px;
+  width: 100%;
+  border: 1px solid gray;
+  background-color: #ffbdbd;
+  border-radius: 5px;
 }
 
 .result {
-    width: 100%;
-     border: 1px solid gray;
-     border-radius: 5px;
- display: grid;
- grid-template-rows: 50% 50%;
+  width: 100%;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
 }
 
 .main-header {
-    text-align: center;
-color: #fcf9ea;
-font-weight: lighter;
-font-size: 25px;
+  text-align: center;
+  color: #fcf9ea;
+  font-weight: lighter;
+  font-size: 25px;
+  font-weight: bolder;
 }
 
 .inputs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .guess-input {
-width: 90px;
-padding: 3px;
-border-radius: 5px;
-border: 1px solid gray;
-font-family: "space mono", monospace;
+  width: 90px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-family: "space mono", monospace;
 }
 button {
-    width: 90px;
-padding: 3px;
-border-radius: 5px;
-border: none;
-color: rgb(0, 0, 0);
-background-color: #ff8b8b;
-font-family: "space mono", monospace;
-color: #fcf9ea;
-
+  width: 90px;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #ff8b8b;
+  font-family: "space mono", monospace;
+  color: #fcf9ea;
 }
 
 button:hover {
-    background-color: #ffa4a4;
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: ease-in-out 0.2s;
-
-    font-weight: bold;
+  background-color: #ffa4a4;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+  font-weight: bold;
 }
 
 .info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* background-image: url("https://i.gifer.com/origin/48/48b104295655cf0908ea58ba723232ac_w200.gif");
+    background-size: 100%;
+    background-position-y: center;*/
+  background-image: url("https://static.vecteezy.com/system/resources/previews/007/875/091/non_2x/tropical-pixel-beach-with-surf-seascape-with-blue-sky-and-glow-of-setting-sun-white-foam-rolls-on-yellow-hot-sand-colorful-ocean-waves-creating-holiday-mood-vector.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
 }
 
 .number-of-tries {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .message {
-    display: flex;
-    
+  display: flex;
 }
 
 .result-message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tracks {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #ffbdbd;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
 
 .tracks-div {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    width: 400px;
-    height: 60px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  width: 450px;
+  height: 60px;
 }
 
-.track1, .track2, .track3, .track4, .track5 {
-width: 100%;
-border: 1px solid gray;
-border-radius: 5px;
-display: grid;
-grid-template-rows: 60% 40%;
-}   
+.track1,
+.track2,
+.track3,
+.track4,
+.track5 {
+  width: 100%;
 
-.track1amount, .track2amount, .track3amount, .track4amount, .track5amount {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  background-color: #ff8b8b;
 }
+
+.track1amount,
+.track2amount,
+.track3amount,
+.track4amount,
+.track5amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-message {
+  border-radius: 5px;
+  border: 1px solid gray;
+  width: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcf9ea;
+}
+
+.half1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.paragraph-D {
+  font-size: 13px;
+}
+
+.starfish1 {
+  width: 60px;
+  animation: starfish 3s infinite;
+}
+
+@keyframes starfish {
+  0% {
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
