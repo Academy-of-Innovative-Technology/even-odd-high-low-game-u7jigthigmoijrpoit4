@@ -1,57 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Even-or-Odd Guess (0–1000)</title>
-<link href="style.css" rel="stylesheet">
-</head>
-<body>
-  <main class="container">
-<div class="half1">
-  <div class="aquarium-container"><img class="fish-tank" src="https://i.pinimg.com/originals/43/e9/10/43e91073aa3b3bcc9c1a5ac719da3ecb.gif"></div>
-</div>
-<div class="half2">
-  <div class="header"><h1 class="main-header">HOW MANY FISH ARE IN THE TANK?</h1></div>
-  <div class="info">
-    <div class="number-of-tries">0</div>
-    <div class="message"><p class="tries">Number of tries this round</p></div>
-  </div>
-  <div class="inputs">
-    <input type="number" class="guess-input" placeholder=" GUESS" min="0" max="1000" />
-    <button class="submit-button">SUBMIT</button>
-    <button class="quit-button">QUIT</button>
-    <button class="reset-button">RESET</button>
-  </div>
-  <div class="result">
-<div class="tracks">
-  <div class="tracks-div">
-    <div class="track1">
-      <div class="track1amount">0</div>
-      <div class="track1name"><p>WINS</p></div>
-    </div>
-        <div class="track2">
-           <div class="track2amount">0</div>
-      <div class="track2name"><p>LOSSES</p></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Even-or-Odd Guess (0–1000)</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="half1">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/019/527/053/non_2x/an-8-bit-retro-styled-pixel-art-illustration-of-a-starfish-free-png.png"
+          class="starfish1"
+        />
+        <div class="aquarium-container">
+          <img
+            class="fish-tank"
+            src="https://i.pinimg.com/originals/43/e9/10/43e91073aa3b3bcc9c1a5ac719da3ecb.gif"
+          />
         </div>
-            <div class="track3">
-               <div class="track3amount">0</div>
-      <div class="track3name"><p>ROUNDS</p></div>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/026/547/535/non_2x/an-8-bit-retro-styled-pixel-art-illustration-of-a-light-blue-starfish-free-png.png"
+          class="starfish1"
+        />
+        <p class="paragraph-D">(it's not just 4 fish btw)</p>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/026/547/551/non_2x/an-8-bit-retro-styled-pixel-art-illustration-of-a-pink-starfish-free-png.png"
+          class="starfish1"
+        />
+      </div>
+      <div class="half2">
+        <div class="header">
+          <h1 class="main-header">HOW MANY FISH ARE IN TANK?</h1>
+        </div>
+        <div class="info">
+          <div class="number-of-tries">0</div>
+          <div class="message">
+            <p class="tries">Number of tries this round</p>
+          </div>
+        </div>
+        <div class="inputs">
+          <input
+            defaultValue="0"
+            type="number"
+            class="guess-input"
+            placeholder=" GUESS"
+            min="0"
+            max="1000"
+          />
+          <button class="submit-button">SUBMIT</button>
+          <button class="quit-button">QUIT</button>
+          <button class="reset-button">RESET</button>
+        </div>
+        <div class="result">
+          <div class="tracks">
+            <div class="tracks-div">
+              <div class="track1">
+                <div class="track1amount">0</div>
+                <div class="track1name"><p>WINS</p></div>
+              </div>
+              <div class="track2">
+                <div class="track2amount">0</div>
+                <div class="track2name"><p>LOSSES</p></div>
+              </div>
+              <div class="track3">
+                <div class="track3amount">0</div>
+                <div class="track3name"><p>ROUNDS</p></div>
+              </div>
+              <div class="track4">
+                <div class="track4amount">0</div>
+                <div class="track4name"><p>STREAK</p></div>
+              </div>
+              <div class="track5">
+                <div class="track5amount">0</div>
+                <div class="track5name"><p>RETRIES</p></div>
+              </div>
             </div>
-                <div class="track4">
-                   <div class="track4amount">0</div>
-      <div class="track4name"><p>STREAK</p></div>
-                </div>
-                    <div class="track5">
-                       <div class="track5amount">0</div>
-      <div class="track5name"><p>RETRIES</p></div>
-                    </div>
-  </div>
-</div>
-<div class="result-message"></div>
-  </div>
-</div>
-  </main>
-  <script src="script.js"></script>
-</body>
+          </div>
+          <div class="result-message">
+            <p class="result-message-paragraph">^ Enter a number to begin!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
